@@ -1,13 +1,18 @@
 # Beyond the Ribbon
 
 - `frontend/` contains the HTML, CSS, and browser JavaScript.
-- `backend/server.ps1` serves the frontend and provides the HIV statistics API.
+- `backend/server.js` serves the frontend and provides the HIV statistics API using Express.
 
 ## Run locally
 
-Run this command from the project root in PowerShell:
--
-    powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\backend\server.ps1
+Install dependencies and start the server from the project root:
+
+```powershell
+npm install
+npm start
+```
+
+Set the `PORT` environment variable to use a port other than `3000`.
 
 
 Open [http://localhost:3000]
