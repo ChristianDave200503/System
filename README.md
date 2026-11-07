@@ -17,6 +17,17 @@ Set the `PORT` environment variable to use a port other than `3000`.
 
 Open [http://localhost:3000]
 
+## Deploy to Vercel
+
+Import this repository into Vercel and leave the project root set to the repository root. The included `vercel.json` deploys `frontend/` as static assets and routes `/api/*` requests to the Express function in `backend/server.js`. No environment variables are required.
+
+You can also deploy from the repository root with the Vercel CLI:
+
+```powershell
+npx vercel
+npx vercel --prod
+```
+
 ## API endpoints
 
 - `GET /api/health` returns the backend health status.
