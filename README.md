@@ -6,12 +6,11 @@
 ## Run locally
 
 Run this command from the project root in PowerShell:
+-
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\backend\server.ps1
 
-```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\backend\server.ps1
-```
 
-Open [http://localhost:3000](http://localhost:3000). To use a different port, pass it as an argument, for example `.\backend\server.ps1 -Port 8080`.
+Open [http://localhost:3000]
 
 ## API endpoints
 
