@@ -1,0 +1,362 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="A welcoming guide to HIV, gender equality, and shared responsibility. Learn the facts, challenge stigma, and find trusted resources.">
+  <title>Beyond the Ribbon — HIV, dignity & equality</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Beyond the Ribbon home">
+        <span class="brand-mark" aria-hidden="true">r</span>
+        <span>BEYOND THE RIBBON</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#facts">The facts</a>
+        <a href="#country-data">By country</a>
+        <a href="#prevention">Prevention</a>
+        <a href="#care">Testing &amp; care</a>
+        <a href="#gender">Gender &amp; HIV</a>
+        <a href="#rights">Know your rights</a>
+        <a class="nav-cta" href="#act">Take action <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid wrap">
+        <div>
+          <p class="eyebrow">HIV awareness, without stigma</p>
+          <h1>Care is a right.<br><em>So is dignity.</em></h1>
+          <p class="hero-copy">HIV is a health issue—not a measure of anyone's worth. Let's make room for honest facts, equal care, and every gender to shape a safer future.</p>
+          <div class="button-row">
+            <a class="button" href="#facts">Start with the facts <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="#rights">Explore your rights</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a red awareness ribbon on a green circular field" role="img">
+          <span class="side-label" aria-hidden="true">KNOW · CARE · INCLUDE</span>
+          <div class="art-disc">
+            <svg class="ribbon-art" viewBox="0 0 180 250" aria-hidden="true">
+              <path d="M47 24 C47 73 125 105 125 157 L125 222 L88 198 L51 222 L51 157 C51 116 116 77 116 24" fill="none" stroke="#e96555" stroke-width="23" stroke-linecap="square" stroke-linejoin="round"/>
+              <path d="M47 24 C47 73 125 105 125 157 L125 222 L88 198 L51 222 L51 157 C51 116 116 77 116 24" fill="none" stroke="#182b36" stroke-opacity=".16" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="art-note">“Nothing about us, without us.”<small>Lead with lived experience</small></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Our values">
+      <div class="ticker-inner wrap">
+        <span>Facts over fear</span><span>Care without judgment</span><span>Equality in every community</span>
+      </div>
+    </div>
+
+    <section class="stats-section" id="facts">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">The picture in numbers</p>
+          <h2>Behind every statistic is a person.</h2>
+          <p>Global estimates help us see both the scale of HIV and the work still ahead. Use them to understand—not to label.</p>
+        </div>
+        <p id="stats-status" class="as-of" role="status" aria-live="polite">Loading current statistics…</p>
+        <div class="stats-grid" id="stats-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="country-section" id="country-data">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Explore by country</p>
+          <h2>One global story. Different local realities.</h2>
+          <p>Search for a country to explore its latest available estimates on HIV. These are modeled estimates—not a count of every person diagnosed—and the reporting year can differ by measure.</p>
+        </div>
+        <form class="country-search" id="country-search-form">
+          <label for="country-search-input">Country or area</label>
+          <div class="country-search-row">
+            <input id="country-search-input" name="country" type="search" list="country-options" placeholder="Start typing a country name" autocomplete="off" minlength="2" maxlength="80" aria-describedby="country-search-help country-search-status" required>
+            <datalist id="country-options"></datalist>
+            <button class="button" type="submit">Search estimates <span aria-hidden="true">⌕</span></button>
+          </div>
+          <p class="search-hint" id="country-search-help">Type at least two letters, choose a country suggestion, then search.</p>
+        </form>
+        <p class="country-status" id="country-search-status" role="status" aria-live="polite"></p>
+        <div class="country-results" id="country-results" aria-live="polite" hidden>
+          <div class="country-result-heading">
+            <div>
+              <p class="eyebrow">Country snapshot</p>
+              <h3 id="country-result-name"></h3>
+              <p id="country-result-region" class="country-result-region"></p>
+            </div>
+            <a id="country-result-source" class="text-link" href="https://data.worldbank.org/" target="_blank" rel="noopener noreferrer">View World Bank data ↗</a>
+          </div>
+          <div class="country-metrics" id="country-metrics"></div>
+          <p class="country-footnote" id="country-result-note"></p>
+        </div>
+        <p class="country-attribution">Source: <a href="https://data.worldbank.org/indicator/SH.HIV.TOTL" target="_blank" rel="noopener noreferrer">World Bank World Development Indicators</a>, using UNAIDS estimates. Each result identifies its estimate year. Data availability varies by country and measure.</p>
+      </div>
+    </section>
+
+    <section class="info-section" id="understanding">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Understand HIV</p>
+          <h2>Knowledge makes room for better choices.</h2>
+          <p>HIV is a virus that affects the immune system. Accurate information about transmission, testing, and treatment helps replace fear with practical support.</p>
+        </div>
+        <div class="info-grid">
+          <article class="info-card">
+            <span class="number">01 / The basics</span>
+            <h3>HIV and AIDS are not the same.</h3>
+            <p>HIV is the virus. AIDS is the most advanced stage of HIV infection, when the immune system has been seriously weakened. Treatment can prevent HIV from progressing to AIDS.</p>
+            <a class="text-link" href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">WHO: HIV and AIDS ↗</a>
+          </article>
+          <article class="info-card">
+            <span class="number">02 / How it spreads</span>
+            <h3>Transmission happens through specific fluids.</h3>
+            <p>HIV can be transmitted through blood, semen, vaginal fluids, and breast milk when the virus enters the body. Examples include condomless sex, shared injecting equipment, and transmission during pregnancy, birth, or breastfeeding without effective prevention and care.</p>
+            <a class="text-link" href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">WHO: transmission facts ↗</a>
+          </article>
+          <article class="info-card">
+            <span class="number">03 / What does not spread it</span>
+            <h3>Everyday contact is safe.</h3>
+            <p>HIV is not transmitted by hugging, handshakes, sharing meals or toilets, or mosquitoes. People living with HIV deserve the same welcome, friendship, and respect as anyone else.</p>
+            <a class="text-link" href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">WHO: common myths ↗</a>
+          </article>
+        </div>
+        <div class="info-note">
+          <strong>Symptoms cannot tell you your HIV status.</strong>
+          <p>Some people have flu-like symptoms soon after acquiring HIV; others have no noticeable symptoms. Many other conditions can cause similar symptoms. Testing—not guessing—is how to know. If you have health concerns, contact a qualified healthcare professional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="prevention-section" id="prevention">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Prevention that respects your choices</p>
+          <h2>There is more than one way to prevent HIV.</h2>
+          <p>People have different relationships, bodies, and circumstances. A healthcare professional can help you choose an approach that fits your needs; combining methods can provide additional protection.</p>
+        </div>
+        <div class="prevention-grid">
+          <article class="prevention-card">
+            <span class="number">01 / Barrier methods</span>
+            <h3>Condoms and lubricant</h3>
+            <p>Correct, consistent use of condoms helps prevent HIV and many other sexually transmitted infections. Water- or silicone-based lubricant can reduce friction and the chance that a condom breaks. Condoms also help prevent pregnancy, though they do not address every sexual-health need.</p>
+            <a class="text-link" href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">WHO: HIV prevention ↗</a>
+          </article>
+          <article class="prevention-card">
+            <span class="number">02 / Before exposure</span>
+            <h3>PrEP is a prevention medicine.</h3>
+            <p>Pre-exposure prophylaxis (PrEP) is medicine for people who do not have HIV and may be exposed to it. It is highly effective when taken as prescribed. A clinician will arrange an HIV test and follow-up checks; PrEP does not prevent other STIs or pregnancy.</p>
+            <a class="text-link" href="https://www.cdc.gov/hiv/prevention/prep.html" target="_blank" rel="noopener noreferrer">CDC: PrEP overview ↗</a>
+          </article>
+          <article class="prevention-card">
+            <span class="number">03 / After a possible exposure</span>
+            <h3>PEP is time-sensitive.</h3>
+            <p>Post-exposure prophylaxis (PEP) is emergency medicine after a possible HIV exposure. It must be started as soon as possible and within 72 hours. A healthcare professional can assess the exposure and provide next steps. PEP is usually taken for 28 days when prescribed.</p>
+            <a class="text-link" href="https://www.cdc.gov/hiv/prevention/pep.html" target="_blank" rel="noopener noreferrer">CDC: PEP overview ↗</a>
+          </article>
+          <article class="prevention-card">
+            <span class="number">04 / Safer health services</span>
+            <h3>Use sterile equipment.</h3>
+            <p>Never share needles, syringes, or other injecting equipment. Use sterile equipment and seek health services that follow infection-prevention standards. Health workers should follow standard precautions with every patient—HIV status should never determine whether someone receives safe care.</p>
+            <a class="text-link" href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">WHO: prevention and transmission ↗</a>
+          </article>
+        </div>
+        <aside class="urgent-note" aria-labelledby="pep-alert-title">
+          <span class="urgent-mark" aria-hidden="true">!</span>
+          <div>
+            <h3 id="pep-alert-title">Think you may have been exposed in the last 72 hours?</h3>
+            <p>Seek urgent medical care now and ask about PEP. Do not wait for symptoms or for an online answer—the sooner PEP starts, the better. This page cannot assess an individual exposure.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="care-section" id="care">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Testing, treatment &amp; living well</p>
+          <h2>Knowing your status connects you to choices.</h2>
+          <p>HIV testing is voluntary and should be confidential. Testing services can help people access prevention or, if a test confirms HIV, treatment and ongoing support.</p>
+        </div>
+        <div class="care-steps">
+          <article class="care-step">
+            <span class="step-number">01</span>
+            <div>
+              <h3>Choose a trusted testing service.</h3>
+              <p>Ask a qualified health facility, clinic, or community-based service about confidential testing. WHO also supports HIV self-testing as an additional option; a reactive self-test is a screening result, not a confirmed diagnosis.</p>
+            </div>
+          </article>
+          <article class="care-step">
+            <span class="step-number">02</span>
+            <div>
+              <h3>Follow the testing process.</h3>
+              <p>Testing may involve a rapid or laboratory test. A trained provider follows the nationally approved testing algorithm and arranges confirmatory testing if needed. The right time to test after an exposure depends on the test and situation—ask the provider whether repeat testing is recommended.</p>
+            </div>
+          </article>
+          <article class="care-step">
+            <span class="step-number">03</span>
+            <div>
+              <h3>If HIV is confirmed, treatment works.</h3>
+              <p>Antiretroviral therapy (ART) controls HIV by reducing the amount of virus in the body. With continued treatment and care, people living with HIV can live long, healthy lives. Starting and staying on treatment is a personal healthcare journey, supported by a qualified provider.</p>
+            </div>
+          </article>
+          <article class="care-step">
+            <span class="step-number">04</span>
+            <div>
+              <h3>Undetectable means no sexual transmission.</h3>
+              <p>When a person takes HIV treatment and maintains an undetectable viral load, they do not transmit HIV through sex (U=U). A healthcare provider can explain viral-load monitoring and what the result means for each person's care.</p>
+            </div>
+          </article>
+        </div>
+        <div class="care-resources">
+          <div>
+            <h3>Looking for testing or treatment in the Philippines?</h3>
+            <p>Contact a licensed healthcare facility or your local health office and ask about confidential HIV testing, accredited treatment hubs, and available prevention services. Confirm service availability and requirements directly with the provider.</p>
+          </div>
+          <div class="care-resource-links">
+            <a class="text-link" href="https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/hiv/testing-diagnostics/hiv-testing-services" target="_blank" rel="noopener noreferrer">WHO: HIV testing services ↗</a>
+            <a class="text-link" href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">WHO: treatment and care ↗</a>
+          </div>
+        </div>
+        <p class="disclaimer">General education only—not diagnosis, individual risk assessment, or a substitute for medical care. Testing rules and service availability vary by location.</p>
+      </div>
+    </section>
+
+    <section class="truth-section" aria-labelledby="truth-title">
+      <div class="truth-layout wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Unlearn the myths</p>
+          <h2 id="truth-title">Good information is an act of care.</h2>
+          <p>Open each card for a clear, evidence-based answer. Share knowledge, not fear.</p>
+        </div>
+        <div class="accordion" aria-label="HIV facts and myths">
+          <article class="fact">
+            <button class="fact-toggle" type="button" aria-expanded="true" aria-controls="fact-1"><span>Can HIV be transmitted through everyday contact?</span><span aria-hidden="true">+</span></button>
+            <div class="fact-body" id="fact-1"><strong>No.</strong> HIV is not transmitted by hugging, sharing food, using the same toilet, or mosquito bites. It is transmitted through specific body fluids, including blood, semen, vaginal fluids, and breast milk. <a href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">WHO: HIV transmission</a></div>
+          </article>
+          <article class="fact">
+            <button class="fact-toggle" type="button" aria-expanded="false" aria-controls="fact-2"><span>Can a person living with HIV have a long, healthy life?</span><span aria-hidden="true">+</span></button>
+            <div class="fact-body" id="fact-2" hidden><strong>Yes.</strong> Antiretroviral therapy (ART) controls HIV and helps people live long, healthy lives. With effective treatment and an undetectable viral load, HIV is not sexually transmitted (U=U). Treatment decisions and personal care should be discussed with a qualified health professional. <a href="https://www.unaids.org/en/resources/fact-sheet" target="_blank" rel="noopener noreferrer">UNAIDS: Fact sheet</a></div>
+          </article>
+          <article class="fact">
+            <button class="fact-toggle" type="button" aria-expanded="false" aria-controls="fact-3"><span>Does HIV affect only certain genders or communities?</span><span aria-hidden="true">+</span></button>
+            <div class="fact-body" id="fact-3" hidden><strong>No.</strong> HIV can affect anyone. Gender inequality, stigma, violence, and unequal access to services can raise barriers to prevention, testing, and care for some people—but no identity tells you someone's HIV status. Only a test can tell.</div>
+          </article>
+          <article class="fact">
+            <button class="fact-toggle" type="button" aria-expanded="false" aria-controls="fact-4"><span>Does getting tested mean someone has done something wrong?</span><span aria-hidden="true">+</span></button>
+            <div class="fact-body" id="fact-4" hidden><strong>Not at all.</strong> Testing is a routine, responsible way to know your status and make informed decisions. WHO recommends HIV testing services that are voluntary, confidential, and connected to prevention and treatment. Look for an accredited local service through your health authority.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lived-section" id="gender">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Gender, power &amp; access</p>
+          <h2>Equality changes the HIV response.</h2>
+          <p>Gender is not a risk category. Inequity is a barrier—and communities can remove it together. UNAIDS reports that women and girls accounted for 44% of new HIV acquisitions in 2025; treatment access also differed between adult women (84%) and men (74%). Gender-based violence, stigma, and unequal decision-making can also make prevention and care harder to reach. <a class="text-link" href="https://www.unaids.org/en/resources/fact-sheet" target="_blank" rel="noopener noreferrer">See the 2025 data ↗</a> · <a class="text-link" href="https://www.unaids.org/en/topic/gender" target="_blank" rel="noopener noreferrer">Gender and HIV ↗</a></p>
+        </div>
+        <div class="lived-grid">
+          <article class="lived-card">
+            <span class="number">01 / Agency</span>
+            <h3>Everyone deserves choices.</h3>
+            <p>Unequal power in relationships can make it harder to negotiate safer sex or access contraception and testing. Consent, education, and services that respect autonomy help put people in control.</p>
+          </article>
+          <article class="lived-card">
+            <span class="number">02 / Safety</span>
+            <h3>Safety is part of health.</h3>
+            <p>Gender-based violence and fear of discrimination can keep people from seeking care. Confidential, affirming services—and communities that believe and support survivors—make care more reachable.</p>
+          </article>
+          <article class="lived-card">
+            <span class="number">03 / Inclusion</span>
+            <h3>Care must fit real lives.</h3>
+            <p>Women and girls, men and boys, and transgender and gender-diverse people are not one-size-fits-all groups. Respectful care listens to each person and protects their privacy and dignity.</p>
+          </article>
+          <article class="lived-card">
+            <span class="number">04 / Solidarity</span>
+            <h3>Stigma hurts the whole response.</h3>
+            <p>Blame and stereotypes discourage honest conversations and timely testing. Use person-first language, challenge misinformation, and make space for people living with HIV to lead.</p>
+          </article>
+        </div>
+        <div class="callout">
+          <span class="callout-mark" aria-hidden="true">“</span>
+          <p><strong>U=U: Undetectable = Untransmittable.</strong> A person living with HIV who takes treatment and maintains an undetectable viral load does not transmit HIV through sex. It is a powerful reason to support access to treatment—not a reason to judge anyone's status. <a href="https://www.unaids.org/en/resources/presscentre/featurestories/2018/july/undetectable-untransmittable" target="_blank" rel="noopener noreferrer">Learn more from UNAIDS</a>.</p>
+        </div>
+        <p class="disclaimer">Gender and access context: <a class="text-link" href="https://www.unaids.org/en/topic/gender" target="_blank" rel="noopener noreferrer">UNAIDS on gender and HIV</a> · <a class="text-link" href="https://www.unwomen.org/en/what-we-do/hiv-and-aids" target="_blank" rel="noopener noreferrer">UN Women on HIV and AIDS</a>.</p>
+      </div>
+    </section>
+
+    <section class="rights-section" id="rights">
+      <div class="rights-grid wrap">
+        <div class="rights-copy">
+          <p class="eyebrow">Rights make care possible</p>
+          <h2>Privacy, respect, and care are not privileges.</h2>
+          <p>In the Philippines, the HIV and AIDS Policy Act sets protections and responsibilities for a rights-based national response. Laws work best when people know them and institutions uphold them.</p>
+          <ul class="rights-list">
+            <li>Protect the confidentiality of HIV-related information.</li>
+            <li>Prohibit discrimination based on actual, perceived, or suspected HIV status.</li>
+            <li>Support access to HIV education, prevention, testing, and treatment services.</li>
+          </ul>
+          <p class="disclaimer">This is a brief, non-legal summary—not legal advice. Read the full law and consult a qualified professional about a specific situation.</p>
+        </div>
+        <aside class="law-card">
+          <span class="law-id">Philippines · Republic Act No. 11166</span>
+          <h3>Philippine HIV and AIDS Policy Act</h3>
+          <p>Enacted in 2018, RA 11166 provides the framework for HIV education, prevention, treatment, care, support, and protection from HIV-related discrimination, while safeguarding confidentiality.</p>
+          <a class="text-link" href="https://www.officialgazette.gov.ph/2018/12/20/republic-act-no-11166/" target="_blank" rel="noopener noreferrer">Read the full text on Official Gazette ↗</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="action-section" id="act">
+      <div class="action-panel wrap">
+        <div>
+          <p class="eyebrow">Small actions, shared impact</p>
+          <h2>Make dignity part of the conversation.</h2>
+          <p>Share a reliable source. Challenge a myth without shaming someone. Support inclusive, confidential services. Listen to people living with HIV—and let them lead.</p>
+        </div>
+        <a class="button" href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">Explore trusted resources <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-row">
+        <div>
+          <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">r</span><span>BEYOND THE RIBBON</span></a>
+          <p class="footer-note">An educational project for HIV awareness, gender equality, inclusion, and social responsibility. Information is not a substitute for personalized medical advice.</p>
+        </div>
+        <div class="footer-links" aria-label="References">
+          <a href="https://www.who.int/news-room/fact-sheets/detail/hiv-aids" target="_blank" rel="noopener noreferrer">WHO · HIV fact sheet</a>
+          <a href="https://data.worldbank.org/indicator/SH.HIV.TOTL" target="_blank" rel="noopener noreferrer">World Bank · Country data</a>
+          <a href="https://www.cdc.gov/hiv/prevention/prep.html" target="_blank" rel="noopener noreferrer">CDC · PrEP</a>
+          <a href="https://www.cdc.gov/hiv/prevention/pep.html" target="_blank" rel="noopener noreferrer">CDC · PEP</a>
+          <a href="https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/hiv/testing-diagnostics/hiv-testing-services" target="_blank" rel="noopener noreferrer">WHO · Testing services</a>
+          <a href="https://www.unaids.org/en/resources/fact-sheet" target="_blank" rel="noopener noreferrer">UNAIDS · Statistics</a>
+          <a href="https://www.unaids.org/en/topic/gender" target="_blank" rel="noopener noreferrer">UNAIDS · Gender and HIV</a>
+          <a href="https://www.unwomen.org/en/what-we-do/hiv-and-aids" target="_blank" rel="noopener noreferrer">UN Women · HIV and AIDS</a>
+          <a href="https://www.officialgazette.gov.ph/2018/12/20/republic-act-no-11166/" target="_blank" rel="noopener noreferrer">RA 11166 · Official Gazette</a>
+        </div>
+      </div>
+      <p class="copyright">Statistics shown are global 2025 estimates. Sources and claims linked throughout. Made to inform, include, and empower.</p>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
